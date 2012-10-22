@@ -1,0 +1,250 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size:   70%;
+	background-color:#404040;
+}
+
+p {
+	font-size:		1em;
+	margin:			1ex 0;
+}
+
+p.buttons {
+	text-align:		center;
+	line-height:	2.5em;
+}
+
+button {
+	line-height:	normal;
+}
+
+A:link {
+	text-decoration: none
+}
+A:visited {
+	text-decoration: none
+}
+A:active {
+	text-decoration: none
+}
+A:hover {
+	text-decoration: none; color: red;
+}
+
+.hidden {
+	display:		none;
+}
+
+.logicthos-error {
+	font-size:12px;
+}
+
+/*
+ *	Rules for simulated drop-down/pop-up lists
+ */
+ul {
+		/* rules common to BOTH inner and outer UL */
+		z-index:	100000;
+		margin:		1ex 0;
+		padding:	0;
+		list-style:	none;
+		cursor:		pointer;
+		border:		1px solid Black;
+		/* rules for outer UL only */
+		width:		15ex;
+		position:	relative;
+}
+
+ul li {
+		background-color: #EEE;
+		padding: 0.15em 1em 0.3em 5px;
+}
+
+ul ul {
+		display:	none;
+		position:	absolute;
+		width:		100%;
+		left:		-1px;
+		/* Pop-Up */
+		bottom:		0;
+		margin:		0;
+		margin-bottom: 1.55em;
+}
+
+.ui-layout-north ul ul {
+		/* Drop-Down */
+		bottom:		auto;
+		margin:		0;
+		margin-top:	1.45em;
+}
+
+ul ul li		{ padding: 3px 1em 3px 5px; }
+ul ul li:hover	{ background-color: #FF9; }
+ul li:hover ul	{ display:	block; background-color: #EEE; }
+
+/* css for timepicker */
+.ui-timepicker-div .ui-widget-header{ margin-bottom: 8px; }
+.ui-timepicker-div dl{ text-align: left; }
+.ui-timepicker-div dl dt{ height: 25px; }
+.ui-timepicker-div dl dd{ margin: -25px 0 10px 65px; }
+.ui-timepicker-div td { font-size: 90%; }
+
+/* css for cell themes - need class per color as we're adding/removing classes dynamically */
+.grid-row-active-yellow
+{
+    background: black;
+    background-color:#FFD700 !important;
+}
+
+.grid-row-normal-yellow
+{
+    background: black;
+    background-color:#FFFF00 !important;
+}
+
+.grid-row-active-white
+{
+    background: black;
+    background-color:#AAAAAA !important;
+}
+
+.grid-row-normal-white
+{
+    background: black;
+    background-color:#FFFFFF !important;
+}
+
+.grid-row-active-blue
+{
+    background: black;
+    background-color:#4682B4 !important;
+}
+
+.grid-row-normal-blue
+{
+    background: black;
+    background-color:#AAD8E6 !important;
+}
+
+.grid-row-active-green
+{
+    background: black;
+    background-color:#9ACD32 !important;
+}
+
+.grid-row-normal-green
+{
+    background: black;
+    background-color:#90EE90 !important;
+}
+
+.grid-row-active-red
+{
+    background: black;
+    background-color:#DC143C !important;
+}
+
+.grid-row-normal-red
+{
+    background: black;
+    background-color:#FFB6C1 !important;
+}
+
+.grid-row-text-inactive
+{
+	color:#808080;
+}
+
+/* css for filiment group menu */
+.fg-button { outline: 0; margin:0 4px 0 0; padding: .4em 1em; text-decoration:none !important; cursor:pointer; position: relative; text-align: center; zoom: 1; }
+.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+a.fg-button { float:left; }
+
+/* remove extra button width in IE */
+button.fg-button { width:auto; overflow:visible; }
+.fg-button-icon-left { padding-left: 2.1em; }
+.fg-button-icon-right { padding-right: 2.1em; }
+.fg-button-icon-left .ui-icon { right: auto; left: .2em; margin-left: 0; }
+.fg-button-icon-right .ui-icon { left: auto; right: .2em; margin-left: 0; }
+.fg-button-icon-solo { display:block; width:8px; text-indent: -9999px; }	 /* solo icon buttons must have block properties for the text-indent to work */	
+.fg-buttonset { float:left; }
+.fg-buttonset .fg-button { float: left; }
+.fg-buttonset-single .fg-button, 
+.fg-buttonset-multi .fg-button { margin-right: -1px;}
+
+.fg-toolbar { 
+	padding: .5em; 
+	margin: 0; 
+}
+.fg-toolbar .fg-buttonset { margin-right:1.5em; padding-left: 1px; }
+.fg-toolbar .fg-button { font-size: 1em;  }
+
+.fg-toolbar-websocket-button {
+	padding-bottom: 3px; 
+	padding-top: 1px; 
+	margin-top: 0px;
+}
+
+.strike { text-decoration: line-through; }
+
+/* label fomatting
+ * width: 40px;     
+
+ */
+ .displayText {
+     color: red;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 10px;
+     font-weight: bold;
+     text-align: center;
+     border: 2px solid black;
+     white-space: nowrap;
+     padding-left: 2px;
+     padding-right: 2px;
+   }
+     
+/*
+ * Bing7 stule applies to complete icon, hence cannot use background
+ */
+ .displayTextBing7 div {
+     color: red !important;
+     font-family: "Lucida Grande", "Arial", sans-serif !important;
+     font-size: 10px !important;
+     font-weight: bold !important;
+   }     
+     
+.infobubble {
+     color: black;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 11px;
+     font-weight: normal;
+     text-align: left;
+     border: 1px solid gray;
+     white-space: nowrap;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+
+dialogsearchresults {
+     color: black;
+     background-color: white;
+     font-family: "Lucida Grande", "Arial", sans-serif;
+     font-size: 11px;
+     font-weight: normal;
+     text-align: left;
+     border: 1px solid gray;
+     white-space: nowrap;
+     padding-left: 10px;
+     padding-right: 10px;
+}
+
+.ui-icon-customhome { 
+  width: 16px; 
+  height: 16px; 
+  background-image: url(../img/icons/open-house.gif); 
+}
